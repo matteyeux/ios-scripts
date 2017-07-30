@@ -6,6 +6,12 @@ fi
 
 mkdir WD
 cd WD
+
+# crappy code I use to enter in recovery mode without udid
+git clone https://gist.github.com/0c272be43e70ad02012242921dd418be.git ideviceenterrecovery && cd ideviceenterrecovery
+gcc ideviceenterrecovery/ideviceenterrecovery.c -o ideviceenterrecovery/ideviceenterrecovery -limobiledevice
+sudo cp ideviceenterrecovery/ideviceenterrecovery /usr/local/bin
+
 # Useful if you don't want to dl entire firmware
 git clone https://github.com/matteyeux/libcrippy && cd libcrippy
 ./autogen.sh && sudo make install
