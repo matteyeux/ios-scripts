@@ -30,5 +30,9 @@ make -C img4lib && sudo cp img4lib/img4 /usr/local/bin/img4tool # sorry for name
 git clone https://github.com/matteyeux/term.git
 sudo make -C term install
 
+git clone https://github.com/tihmstar/tsschecker
+./tsschecker/autohen.sh
+make -C tsschecker install
+
 wget https://d2ap6ypl1xbe4k.cloudfront.net/Hopper-v4-4.2.10-Linux.deb
 sudo dpkg -i Hopper-v4-4.2.10-Linux.deb
