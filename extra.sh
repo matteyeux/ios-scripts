@@ -32,7 +32,11 @@ sudo make -C term install
 
 git clone https://github.com/tihmstar/tsschecker
 ./tsschecker/autohen.sh
-make -C tsschecker install
+sudo make -C tsschecker install
+
+sudo apt-get install -y libboost-dev libcurl-dev
+git clone https://github.com/ABeltramo/otachecker-u
+make -C otachecker-u && cp bin/otachecker /usr/local/bin
 
 wget https://d2ap6ypl1xbe4k.cloudfront.net/Hopper-v4-4.2.10-Linux.deb
 sudo dpkg -i Hopper-v4-4.2.10-Linux.deb
