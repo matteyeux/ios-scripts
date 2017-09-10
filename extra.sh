@@ -30,10 +30,6 @@ make -C img4lib && sudo cp img4lib/img4 /usr/local/bin/img4tool # sorry for name
 git clone https://github.com/matteyeux/term.git
 sudo make -C term install
 
-git clone https://github.com/tihmstar/tsschecker
-./tsschecker/autohen.sh
-sudo make -C tsschecker install
-
 sudo apt-get install -y libboost-dev libcurl-dev
 git clone https://github.com/ABeltramo/otachecker-u
 make -C otachecker-u && cp bin/otachecker /usr/local/bin
