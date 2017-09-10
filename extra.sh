@@ -22,9 +22,12 @@ sudo ldconfig
 git clone https://github.com/radare/radare2 && cd radare2
 ./sys/install.sh
 
+git clone https://github.com/matteyeux/iBoot32Patcher
+make -C iBoot32Patcher install
+
 git clone --recursive https://github.com/xerub/img4lib.git 
 make -C img4lib/lzfse 
-make -C img4lib && sudo cp img4lib/img4 /usr/local/bin/img4tool # sorry for name it will conflict with img4
+make -C img4lib && sudo cp img4lib/img4 /usr/local/bin/img4 
 
 # I use it with qwertyoruiop's serialsh
 git clone https://github.com/matteyeux/term.git
