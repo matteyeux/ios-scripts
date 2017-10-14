@@ -30,6 +30,7 @@ function jtinstall {
         tar xvf jtool.tar
         rm jtool
         mv jtool.ELF64 jtool
+		sudo cp jtool.1 /usr/local/share/man/man1
         sudo cp jtool $INSTALL_DIR
         echo -e "\033[1;32mInstalled jtool to $INSTALL_DIR"
 }
