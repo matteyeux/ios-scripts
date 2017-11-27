@@ -21,6 +21,8 @@
 #    26/10/16 |     matteyeux      | Script creation
 #   ---------------------------------------------------------------
 #    27/10/16 |     matteyeux      | Added disarm install
+#   ---------------------------------------------------------------
+#    26/11/17 |     matteyeux      | macOS support
 #   ---
 INSTALL_DIR='/usr/local/bin/'
 WD=~/.tmp_update #Working Directory
