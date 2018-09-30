@@ -31,10 +31,6 @@ cd ..
 git clone https://github.com/matteyeux/iBoot32Patcher
 make -C iBoot32Patcher install
 
-git clone --recursive https://github.com/xerub/img4tool.git
-make -C img4tool/lzfse
-make -C img4tool && sudo cp img4lib/img4 /usr/local/bin/img4
-
 # I use it with qwertyoruiop's serialsh
 git clone https://github.com/matteyeux/term.git
 sudo make -C term install
