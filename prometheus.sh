@@ -22,7 +22,7 @@ git clone https://github.com/tihmstar/libfragmentzip && cd libfragmentzip
 cd ..
 
 git clone --recursive https://github.com/tihmstar/tsschecker
-./tsschecker/autohen.sh
+./tsschecker/autogen.sh
 sudo make -C tsschecker install
 
 mkdir tmp && cd tmp
